@@ -1,0 +1,30 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .on {
+    color: red;
+  }
+  .off {
+    color: rgb(243, 226, 226);
+  }
+  h1{
+     font-size: large;
+     color: red;
+  }
+  .star{
+    font-size: xx-large;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rating{
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 20px;
+  }
