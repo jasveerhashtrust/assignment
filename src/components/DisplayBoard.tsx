@@ -9,7 +9,7 @@ const DisplayBoard = () => {
         <div>
             <h1>GOLD Price</h1>
             <label>Currency : </label>
-            <input placeholder="INR" onChange={changeHandler} name="currency" />
+            <input placeholder="enter the currency" onChange={changeHandler} name="currency" />
             <button className="btn" onClick={btnHandler} >select</button>
             <table>
                 <thead>

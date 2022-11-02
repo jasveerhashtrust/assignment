@@ -4,7 +4,7 @@ import { PriceTypes } from "../types/types";
 
 const useDisplayBoard =()=> {
     const [price , setPrice]=useState<PriceTypes>()
-    const [ currency , setCurrency]=useState<string>('INR')
+    const [ currency , setCurrency]=useState<string>('')
     const [value , setvalue]=useState<string>('')
     const getRates = async() => {
         try {
@@ -37,7 +37,7 @@ const useDisplayBoard =()=> {
     useEffect(() => {
         const interval = setInterval(() => {
             getRates();
-           },4000);
+           },40000);
            return () => clearInterval(interval);
     }, []);
 
